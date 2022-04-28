@@ -23,9 +23,6 @@ expect <<END
 	send -- "\n"
 	expect eof
 END
-echo '======' >> res1.txt
-echo $(hostname) >> res1.txt
-pcregrep -o1 -e 'name is (.*?)\.' -e '(https://streamr.network/network-explorer/nodes/0[xX][0-9a-fA-F]+)' -e '(0[xX][0-9a-fA-F]+)' switch1.log >> res1.txt
 
 expect <<END
 	set timeout 300
@@ -50,9 +47,6 @@ expect <<END
 	send -- "\n"
 	expect eof
 END
-echo '======' >> res2.txt
-echo $(hostname) >> res2.txt
-pcregrep -o1 -e 'name is (.*?)\.' -e '(https://streamr.network/network-explorer/nodes/0[xX][0-9a-fA-F]+)' -e '(0[xX][0-9a-fA-F]+)' switch2.log >> res2.txt
 
 expect <<END
 	set timeout 300
@@ -77,9 +71,6 @@ expect <<END
 	send -- "\n"
 	expect eof
 END
-echo '======' >> res3.txt
-echo $(hostname) >> res3.txt
-pcregrep -o1 -e 'name is (.*?)\.' -e '(https://streamr.network/network-explorer/nodes/0[xX][0-9a-fA-F]+)' -e '(0[xX][0-9a-fA-F]+)' switch3.log >> res3.txt
 
 expect <<END
 	set timeout 300
@@ -104,9 +95,6 @@ expect <<END
 	send -- "\n"
 	expect eof
 END
-echo '======' >> res4.txt
-echo $(hostname) >> res4.txt
-pcregrep -o1 -e 'name is (.*?)\.' -e '(https://streamr.network/network-explorer/nodes/0[xX][0-9a-fA-F]+)' -e '(0[xX][0-9a-fA-F]+)' switch4.log >> res4.txt
 
 expect <<END
 	set timeout 300
@@ -131,6 +119,3 @@ expect <<END
 	send -- "\n"
 	expect eof
 END
-echo '======' >> res5.txt
-echo $(hostname) >> res5.txt
-pcregrep -o1 -e 'name is (.*?)\.' -e '(https://streamr.network/network-explorer/nodes/0[xX][0-9a-fA-F]+)' -e '(0[xX][0-9a-fA-F]+)' switch5.log >> res5.txt
