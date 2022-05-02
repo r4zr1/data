@@ -4,50 +4,30 @@ services:
   streamr1:
     container_name: streamr1
     image: streamr/broker-node:latest
-    ports:
-      - 7170:7170
-      - 7171:7171
-      - 1883:1883
     volumes:
       - /opt/streamr1:/root/.streamr
     restart: unless-stopped
   streamr2:
     container_name: streamr2
     image: streamr/broker-node:latest
-    ports:
-      - 7172:7172
-      - 7173:7173
-      - 1884:1884
     volumes:
       - /opt/streamr2:/root/.streamr
     restart: unless-stopped
   streamr3:
     container_name: streamr3
     image: streamr/broker-node:latest
-    ports:
-      - 7174:7174
-      - 7175:7175
-      - 1885:1885
     volumes:
       - /opt/streamr3:/root/.streamr
     restart: unless-stopped
   streamr4:
     container_name: streamr4
     image: streamr/broker-node:latest
-    ports:
-      - 7176:7176
-      - 7177:7177
-      - 1886:1886
     volumes:
       - /opt/streamr4:/root/.streamr
     restart: unless-stopped
   streamr5:
     container_name: streamr5
     image: streamr/broker-node:latest
-    ports:
-      - 7178:7178
-      - 7179:7179
-      - 1887:1887
     volumes:
       - /opt/streamr5:/root/.streamr
     restart: unless-stopped
