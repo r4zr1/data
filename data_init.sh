@@ -2,7 +2,6 @@
 
 expect <<END
 	set timeout 300
-	log_file switch1.log
 	spawn docker run -it -v /opt/streamr1:/root/.streamr streamr/broker-node:latest bin/config-wizard
 	expect "Do you want to generate"
 	send -- "\033\[A\n"
@@ -20,7 +19,6 @@ END
 
 expect <<END
 	set timeout 300
-	log_file switch2.log
 	spawn docker run -it -v /opt/streamr2:/root/.streamr streamr/broker-node:latest bin/config-wizard
 	expect "Do you want to generate"
 	send -- "\033\[A\n"
@@ -38,7 +36,6 @@ END
 
 expect <<END
 	set timeout 300
-	log_file switch3.log
 	spawn docker run -it -v /opt/streamr3:/root/.streamr streamr/broker-node:latest bin/config-wizard
 	expect "Do you want to generate"
 	send -- "\033\[A\n"
@@ -56,7 +53,6 @@ END
 
 expect <<END
 	set timeout 300
-	log_file switch4.log
 	spawn docker run -it -v /opt/streamr4:/root/.streamr streamr/broker-node:latest bin/config-wizard
 	expect "Do you want to generate"
 	send -- "\033\[A\n"
@@ -74,7 +70,6 @@ END
 
 expect <<END
 	set timeout 300
-	log_file switch5.log
 	spawn docker run -it -v /opt/streamr5:/root/.streamr streamr/broker-node:latest bin/config-wizard
 	expect "Do you want to generate"
 	send -- "\033\[A\n"
