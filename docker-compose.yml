@@ -5,29 +5,41 @@ services:
     container_name: streamr1
     image: streamr/broker-node:latest
     volumes:
-      - /opt/streamr1:/root/.streamr
+      - /opt/streamr1:/home/streamr/.streamr
+    environment:
+      - NODE_ENV=production
     restart: unless-stopped
   streamr2:
     container_name: streamr2
     image: streamr/broker-node:latest
     volumes:
-      - /opt/streamr2:/root/.streamr
+      - /opt/streamr2:/home/streamr/.streamr
+    environment:
+      - NODE_ENV=production
     restart: unless-stopped
   streamr3:
     container_name: streamr3
     image: streamr/broker-node:latest
     volumes:
-      - /opt/streamr3:/root/.streamr
+      - /opt/streamr3:/home/streamr/.streamr
+    environment:
+      - NODE_ENV=production
     restart: unless-stopped
   streamr4:
     container_name: streamr4
     image: streamr/broker-node:latest
     volumes:
-      - /opt/streamr4:/root/.streamr
+      - /opt/streamr4:/home/streamr/.streamr
+    environment:
+      - NODE_ENV=production
     restart: unless-stopped
   streamr5:
     container_name: streamr5
     image: streamr/broker-node:latest
     volumes:
-      - /opt/streamr5:/root/.streamr
+      - /opt/streamr5:/home/streamr/.streamr
+    environment:
+      - NODE_ENV=production
     restart: unless-stopped
+ 
+
