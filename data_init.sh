@@ -2,7 +2,7 @@
 
 expect <<END
 	set timeout 300
-	spawn docker run -it -v /opt/streamr1:/root/.streamr streamr/broker-node:latest bin/config-wizard
+	spawn docker run -it -v /opt/streamr1:/home/streamr/.streamr streamr/broker-node:latest bin/config-wizard
 	expect "Do you want to generate"
 	send -- "\033\[A\n"
 	expect "Please provide the private key to import"
@@ -19,7 +19,7 @@ END
 
 expect <<END
 	set timeout 300
-	spawn docker run -it -v /opt/streamr2:/root/.streamr streamr/broker-node:latest bin/config-wizard
+	spawn docker run -it -v /opt/streamr2:/home/streamr/.streamr streamr/broker-node:latest bin/config-wizard
 	expect "Do you want to generate"
 	send -- "\033\[A\n"
 	expect "Please provide the private key to import"
@@ -36,7 +36,7 @@ END
 
 expect <<END
 	set timeout 300
-	spawn docker run -it -v /opt/streamr3:/root/.streamr streamr/broker-node:latest bin/config-wizard
+	spawn docker run -it -v /opt/streamr3:/home/streamr/.streamr streamr/broker-node:latest bin/config-wizard
 	expect "Do you want to generate"
 	send -- "\033\[A\n"
 	expect "Please provide the private key to import"
@@ -53,7 +53,7 @@ END
 
 expect <<END
 	set timeout 300
-	spawn docker run -it -v /opt/streamr4:/root/.streamr streamr/broker-node:latest bin/config-wizard
+	spawn docker run -it -v /opt/streamr4:/home/streamr/.streamr streamr/broker-node:latest bin/config-wizard
 	expect "Do you want to generate"
 	send -- "\033\[A\n"
 	expect "Please provide the private key to import"
@@ -70,7 +70,7 @@ END
 
 expect <<END
 	set timeout 300
-	spawn docker run -it -v /opt/streamr5:/root/.streamr streamr/broker-node:latest bin/config-wizard
+	spawn docker run -it -v /opt/streamr5:/home/streamr/.streamr streamr/broker-node:latest bin/config-wizard
 	expect "Do you want to generate"
 	send -- "\033\[A\n"
 	expect "Please provide the private key to import"
