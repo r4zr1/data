@@ -12,6 +12,8 @@ expect <<END
 	send -- "\n"
 	expect "Do you want to participate"
 	send -- "Y\n"
+ 	expect "It is recommended to set a separate"
+  	send -- "\n"
 	expect "Select a path to store"
 	send -- "\n"
 	expect eof
@@ -29,6 +31,8 @@ expect <<END
 	send -- "\n"
 	expect "Do you want to participate"
 	send -- "Y\n"
+ 	expect "It is recommended to set a separate"
+  	send -- "\n"
 	expect "Select a path to store"
 	send -- "\n"
 	expect eof
@@ -46,6 +50,8 @@ expect <<END
 	send -- "\n"
 	expect "Do you want to participate"
 	send -- "Y\n"
+ 	expect "It is recommended to set a separate"
+  	send -- "\n"
 	expect "Select a path to store"
 	send -- "\n"
 	expect eof
@@ -63,6 +69,8 @@ expect <<END
 	send -- "\n"
 	expect "Do you want to participate"
 	send -- "Y\n"
+ 	expect "It is recommended to set a separate"
+  	send -- "\n"
 	expect "Select a path to store"
 	send -- "\n"
 	expect eof
@@ -80,6 +88,8 @@ expect <<END
 	send -- "\n"
 	expect "Do you want to participate"
 	send -- "Y\n"
+ 	expect "It is recommended to set a separate"
+  	send -- "\n"
 	expect "Select a path to store"
 	send -- "\n"
 	expect eof
